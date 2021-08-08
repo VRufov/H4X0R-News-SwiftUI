@@ -11,6 +11,10 @@
 		7E0D41CD26C04ABD00CC851B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D41CC26C04ABD00CC851B /* ContentView.swift */; };
 		7E0D41CF26C04AC000CC851B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D41CE26C04AC000CC851B /* Assets.xcassets */; };
 		7E0D41D226C04AC000CC851B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D41D126C04AC000CC851B /* Preview Assets.xcassets */; };
+		7E0D41DD26C055CC00CC851B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D41DC26C055CC00CC851B /* NetworkManager.swift */; };
+		7E0D41DF26C057C600CC851B /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D41DE26C057C600CC851B /* PostData.swift */; };
+		7E0D41E226C05DCA00CC851B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D41E126C05DCA00CC851B /* DetailView.swift */; };
+		7E0D41E426C06CA500CC851B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D41E326C06CA500CC851B /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		7E0D41CE26C04AC000CC851B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0D41D126C04AC000CC851B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E0D41D326C04AC000CC851B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0D41DC26C055CC00CC851B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7E0D41DE26C057C600CC851B /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		7E0D41E126C05DCA00CC851B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7E0D41E326C06CA500CC851B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,9 @@
 		7E0D41C926C04ABD00CC851B /* H4X0R-News-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7E0D41D926C0557600CC851B /* Models */,
 				7E0D41CA26C04ABD00CC851B /* H4X0R_News_SwiftUIApp.swift */,
-				7E0D41CC26C04ABD00CC851B /* ContentView.swift */,
+				7E0D41E026C05DAB00CC851B /* Views */,
 				7E0D41CE26C04AC000CC851B /* Assets.xcassets */,
 				7E0D41D326C04AC000CC851B /* Info.plist */,
 				7E0D41D026C04AC000CC851B /* Preview Content */,
@@ -67,6 +76,25 @@
 				7E0D41D126C04AC000CC851B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E0D41D926C0557600CC851B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D41DC26C055CC00CC851B /* NetworkManager.swift */,
+				7E0D41DE26C057C600CC851B /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E0D41E026C05DAB00CC851B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D41CC26C04ABD00CC851B /* ContentView.swift */,
+				7E0D41E126C05DCA00CC851B /* DetailView.swift */,
+				7E0D41E326C06CA500CC851B /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0D41DD26C055CC00CC851B /* NetworkManager.swift in Sources */,
+				7E0D41DF26C057C600CC851B /* PostData.swift in Sources */,
 				7E0D41CD26C04ABD00CC851B /* ContentView.swift in Sources */,
+				7E0D41E426C06CA500CC851B /* WebView.swift in Sources */,
+				7E0D41E226C05DCA00CC851B /* DetailView.swift in Sources */,
 				7E0D41CB26C04ABD00CC851B /* H4X0R_News_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
